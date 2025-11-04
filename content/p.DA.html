@@ -1,11 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-  </head>
-  <body>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IR_live</title>
+        <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
+        <style>
+            @font-face {
+                font-family: "Homoneta";
+                src: url("docs/otf/Homoneta-Regular.otf") format("opentype");
+                font-weight: normal;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: "Homoneta";
+                src: url("docs/otf/Homoneta-Italic.otf") format("opentype");
+                font-weight: normal;
+                font-style: italic;
+            }
+            body {
+                background-color: black;
+                color: black;
+                font-family: "Homoneta", sans-serif;
+            }
+            h1 {
+                font-family: Homoneta;
+                color: white;
+                font-size: 50vw;
+            }
+            h2 {
+                font-family: Homoneta;
+                color: white;
+                font-size: 6vw;
+            }
+            p {
+                font-family: "Homoneta";
+                font-size: 2vw;
+                color: white;
+            }
+            pre {
+                font-size: 2vw;
+                color: black;
+            }
+            a {
+                color: white;
+            }
+            .blink {
+                animation: blink-animation 1s infinite;
+            }
+            @keyframes blink-animation {
+                0%,
+                49% {
+                    opacity: 1;
+                }
+                50%,
+                100% {
+                    opacity: 0;
+                }
+            }
+            .container {
+                position: relative;
+                width: 50%;
+                margin: 5%;
+                background: black;
+            }
+            .ascii-layer {
+                position: relative;
+                color: white;
+                z-index: 1;
+                margin: 0;
+                padding: 0;
+            }
+            .text-layer {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                color: white;
+                z-index: 2;
+                pointer-events: none;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <pre class="ascii-layer">
+            |-x-o-----------------------------------------------|
+            |                                                   |
+            |---------------------------------------------------|
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |---------------------------------------------------|
+            </pre>
+            <pre class="text-layer">
+            |                                                   |
+            |                   IR_live                         |
+            |                                                   |
+            |   Le projet IR_live met Ableton au centre         |
+            |   de la scène. Avec Live 12.2, Push II et un      |
+            |   contrôleur MIDI, le but est tout simplement de  |
+            |   "jouer de l'ordinateur".                        |
+            |   Chaque live est une jam en direct, une réaction |
+            |   à ce que propose le système.                    |
+            |   Jouer un live IR revient souvent à jeter des    |
+            |   dés, le tempo et les genres varient. Le voyage  |
+            |   est avant tout temporel, il s'inscrit dans le   |
+            |   réel.                                           |
+            |   J'essaie d'utiliser les effets natifs           |
+            |   d'Ableton le plus possible + des plugins        |
+            |   faits maison, most of it is operator and MDD    |
+
+            </pre>
+        </div>
+        <div class="container">
+            <pre class="ascii-layer">
+            |-x-o-----------------------------------------------|
+            |                                                   |
+            |---------------------------------------------------|
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |---------------------------------------------------|
+            </pre>
+            <pre class="text-layer">
+            |                                                   |
+            |               Extraits ytb                        |
+            |                                                   |
+            |  #    genre              live        practice     |
+            |  8    <a href="https://youtu.be/EvkEUzCej9I?si=BW0c6J4UKmziEz_t">?psy</a>                              x         |
+            |  7    <a href="https://youtu.be/5JjHGJM5R2U?si=1yMqwwv66VHBtISC">Industrial techno</a>    x                      |
+            |  6    <a href="https://youtu.be/aqBZRU2FgeA?si=Dc6DlI_djKxPRL8M">Tribe 3</a>                           x         |
+            |  5    <a href="https://youtu.be/aqBZRU2FgeA?si=Dc6DlI_djKxPRL8M">Tribe 2</a>              x                      |
+            |  4    <a href="https://youtu.be/7zI6uWGW75A?si=5RMXaJ2Db4xBDLX1">Tribe 1</a>              x                      |
+            |  3    <a href="https://youtu.be/2ezIGLdRBi0?si=xQq19Ky2Iy0_9HXp">Techno 3</a>             x                      |
+            |  2    <a href="https://youtu.be/Tgn00DncTBI?si=jPzfSUuzJo3JmJ1B">Techno 2</a>                          x         |
+            |  1    <a href="https://youtu.be/yStKR2n4bPA?si=qIcz3GfhbohLaGPI">Techno 1</a>                          x         |
+
+            </pre>
+        </div>
+        <div style="width: 95%; float: left; margin: 5%; background: white">
+            <pre style="color: black; align: center">
+        <a href="https://boumboumtechno.neocities.org/" style="color: black;"><- back to main</a>                 <a href="https://boumboumtechno.neocities.org/sorties.html" style="color: black;"><- back to Sorties</a>
+        </pre>
+        </div>
+    </body>
 </html>

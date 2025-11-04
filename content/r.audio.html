@@ -1,11 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-  </head>
-  <body>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IR_live</title>
+        <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
+        <style>
+            @font-face {
+                font-family: "Homoneta";
+                src: url("docs/otf/Homoneta-Regular.otf") format("opentype");
+                font-weight: normal;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: "Homoneta";
+                src: url("docs/otf/Homoneta-Italic.otf") format("opentype");
+                font-weight: normal;
+                font-style: italic;
+            }
+            body {
+                background-color: black;
+                color: black;
+                font-family: "Homoneta", sans-serif;
+            }
+            h1 {
+                font-family: Homoneta;
+                color: white;
+                font-size: 50vw;
+            }
+            h2 {
+                font-family: Homoneta;
+                color: white;
+                font-size: 6vw;
+            }
+            p {
+                font-family: "Homoneta";
+                font-size: 2vw;
+                color: white;
+            }
+            pre {
+                font-size: 2vw;
+                color: black;
+            }
+            a {
+                color: white;
+            }
+            .blink {
+                animation: blink-animation 1s infinite;
+            }
+            @keyframes blink-animation {
+                0%,
+                49% {
+                    opacity: 1;
+                }
+                50%,
+                100% {
+                    opacity: 0;
+                }
+            }
+            .container {
+                position: relative;
+                width: 50%;
+                margin: 5%;
+                background: black;
+            }
+            .ascii-layer {
+                position: relative;
+                color: white;
+                z-index: 1;
+                margin: 0;
+                padding: 0;
+                pointer-events: none;
+            }
+            .text-layer {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                color: white;
+                z-index: 2;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <pre class="ascii-layer">
+            |-x-o-----------------------------------------------|
+            |                                                   |
+            |---------------------------------------------------|
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |---------------------------------------------------|
+            </pre>
+            <pre class="text-layer">
+            |                                                   |
+            |   Mostly used audio tools                         |
+            |                                                   |
+            |   Software :                                      |
+            |        Ableton                                    |
+            |        VcV rack / Orca                            |
+            |   Vst :                                           |
+            |        Analog Obsession                           |
+            |        Arturia v and fx col                       |
+            |        Ghz suite                                  |
+            |   hardware :                                      |
+            |        Polyend tracker                            |
+            |        Arturia minifreak                          |
+            |        Berhinger neutron                          |
+            |                                                   |
+
+            </pre>
+        </div>
+
+        <div style="width: 95%; float: left; margin: 5%; background: white">
+            <pre style="color: black; align: center">
+        <a href="https://boumboumtechno.neocities.org/" style="color: black;"><- back to main</a>                 <a href="https://boumboumtechno.neocities.org/sorties.html" style="color: black;"><- back to Sorties</a>
+        </pre>
+        </div>
+    </body>
 </html>
